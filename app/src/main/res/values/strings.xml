@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Home devices</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+        \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="forward_message">Forward Message</string>
+    <string name="delete_button">Delete</string>
+    <string name="forward_button">Forward</string>
+    <string name="to_label">To:</string>
+    <string name="name_label">Name:</string>
+    <string name="text_label">Text:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

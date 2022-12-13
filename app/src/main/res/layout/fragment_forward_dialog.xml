@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/forwardMessageLabel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/forward_message"
+            android:textColor="@color/blue_50"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/toLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/to_label"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forwardMessageLabel" />
+
+        <EditText
+            android:id="@+id/email_field"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Enter recipient's email address"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="8dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/toLabel"
+            app:layout_constraintTop_toTopOf="@+id/toLabel" />
+
+        <TextView
+            android:id="@+id/nameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/name_label"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/toLabel"
+            app:layout_constraintTop_toBottomOf="@+id/toLabel" />
+
+        <EditText
+            android:id="@+id/from_field"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Enter recipient's name"
+            android:inputType="textPersonName"
+            android:paddingLeft="8dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nameLabel"
+            app:layout_constraintTop_toTopOf="@+id/nameLabel" />
+
+        <TextView
+            android:id="@+id/textLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/text_label"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/nameLabel"
+            app:layout_constraintTop_toBottomOf="@+id/nameLabel" />
+
+        <EditText
+            android:id="@+id/message_field"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Enter message text"
+            android:inputType="textMultiLine"
+            android:paddingLeft="8dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textLabel"
+            app:layout_constraintTop_toTopOf="@+id/textLabel" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message_field"
+            android:textColor="@color/colorPrimary"
+            android:background="?selectableItemBackground"
+            android:id="@+id/send_button"
+            android:text="send"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
